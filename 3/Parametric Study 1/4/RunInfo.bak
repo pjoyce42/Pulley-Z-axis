@@ -1,0 +1,26 @@
+﻿absolute path:C:\Users\Patrick\Documents\GitHub\Pulley-Z-axis\3\Parametric Study 1\4
+init:1
+run_capture:1
+run_solver:1
+new_calc:1
+close_monitor:1
+run_convert:1782583227
+isOK:1
+ForceNewCalc:0
+run_capture_prestate:1
+StartFldName:C:\Users\Patrick\Documents\GitHub\Pulley-Z-axis\3\Parametric Study 1\4\4.fld
+TransTimeMoments:
+TransFldNames:
+CurSelTranFld:0
+Trans:0
+UsePrevRes:0
+ForcetoRunCPT:1
+ComputerName:
+port:30164
+ProcessResults:1
+LoadLastResult:0
+ProcessorsToUse:2
+LoadBaseFLDFile:0
+BaseFLDFile:
+id:{AF57DC68-1B65-47C6-A7C5-C4FD007AEC13}
+calculation_state:9

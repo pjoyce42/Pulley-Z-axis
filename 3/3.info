@@ -1,0 +1,113 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2015 SP1.0. Build: 2948
+                Computer name:   PATRICK-LAPTOP
+                User name:   Patrick
+                Processors:   Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz
+                Memory:   6047 MB / 134217727 MB
+                Operating system:    (Build 9600)
+                CAD version:   SOLIDWORKS 2015 SP1.1
+                CPU speed:   2301 MHz
+
+    General Info
+                Model:   Hotend strain guage.SLDASM
+                Project name:   fan sizing cfm
+                Project path:   C:\Users\Patrick\Documents\GitHub\Pulley-Z-axis\3
+                Units system:   CGS (cm-g-s)
+                Analysis type:   External (exclude internal spaces)
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   On
+                Heat conduction in solids only:   Off
+                Radiation:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Default roughness:   30.0 micrometer
+
+        Gravitational Settings
+                X component:   0 cm/s^2
+                Y component:   -981 cm/s^2
+                Z component:   0 cm/s^2
+
+    Computational Domain
+
+        Size
+                X min:   -10.0 cm
+                X max:   10.0 cm
+                Y min:   -10.0 cm
+                Y max:   10.0 cm
+                Z min:   -10.0 cm
+                Z max:   10.0 cm
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   29
+                Number of cells in Y:   28
+                Number of cells in Z:   30
+
+        Number Of Cells
+                Total cells:   36071
+                Fluid cells:   27196
+                Solid cells:   1477
+                Partial cells:   7398
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   3
+
+    Goals
+
+        Surface Goals
+
+            Thermistor temp
+                Type:   Surface Goal
+                Goal type:   Temperature (Solid)
+                Calculate:   Average value
+                Faces:   Face<1>@e3dv6 standin-1/e3dv6 heater block-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            heat break temp
+                Type:   Surface Goal
+                Goal type:   Temperature (Solid)
+                Calculate:   Average value
+                Faces:   Face<1>@e3dv6 standin-1/steel heat break-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+        Volume Goals
+
+            nozzle temp
+                Type:   Volume Goal
+                Goal type:   Temperature (Solid)
+                Calculate:   Average value
+                Components:   e3dv6 standin-1@Hotend strain guage/e3d .40mm nozzle-1@e3dv6 standin
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Use in convergence    	Delta   	Criteria
+                Thermistor temp   	°C   	199.91   	100   	On   	1.89570417   	5.40962041
+                heat break temp   	°C   	216.61   	100   	On   	4.04831814   	5.9773126
+                nozzle temp   	°C   	223.41   	100   	On   	1.06556801   	6.04001593
+
+    General Info
+                Iterations:   67
+                CPU time:   266 s
+
+        Log
+                Mesh generation started:   15:28:42 , Nov 27
+                Mesh generation normally finished:   15:28:53 , Nov 27
+                Preparing data for calculation:   15:29:00 , Nov 27
+                Calculation started	0:   15:29:00 , Nov 27
+                Calculation has converged since the following criteria are satisfied:	66:   15:33:20 , Nov 27
+                    Goals are converged	66:   
+                Calculation finished	67:   15:33:29 , Nov 27
