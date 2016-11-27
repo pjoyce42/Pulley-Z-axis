@@ -1,0 +1,265 @@
+﻿New Table( "cooling fan DOE 1_Sheet6",
+	Add Rows( 8 ),
+	New Table Variable( "Design", "Full Factorial" ),
+	New Script(
+		"Screening",
+		Screening(
+			Y(
+				:nozzle temp,
+				:Name( " thermistor temp" ),
+				:Name( " heat break temp" )
+			),
+			X( :heat block power, :Name( " FAN direction" ), :Name( " fan" ) )
+		)
+	),
+	New Script(
+		"Model",
+		Fit Model(
+			Effects(
+				:heat block power,
+				:Name( " FAN direction" ),
+				:Name( " fan" ),
+				:heat block power * :Name( " FAN direction" ),
+				:heat block power * :Name( " fan" ),
+				:Name( " FAN direction" ) * :Name( " fan" )
+			),
+			Y( :nozzle temp ),
+			Y( :Name( " thermistor temp" ) ),
+			Y( :Name( " heat break temp" ) ),
+			PERSONALITY( Standard Least Squares )
+		)
+	),
+	New Script(
+		"DOE Dialog",
+		DOE(
+			Screening Design,
+			{Add Response( None, "Y", ., ., . ),
+			Add Response( Match Target, "Y2", ., ., . ),
+			Add Response( Minimize, "Y3", ., ., . ),
+			Add Factor( Continuous, -1, 1, "X1", 0 ),
+			Add Factor( Continuous, -1, 1, "X2", 0 ),
+			Add Factor( Continuous, -1, 1, "X3", 0 ), Set Random Seed( 50748 ),
+			Make Design( 2 ), Make Table}
+		)
+	),
+	New Column( "Pattern",
+		Character,
+		Nominal,
+		Set Values( {"−−+", "−+−", "++−", "+−+", "−−−", "+−−", "+++", "−++"} )
+	),
+	New Column( "heat block power",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Property( "Coding", {-1, 1} ),
+		Set Property( "Design Role", DesignRole( Continuous ) ),
+		Set Property( "Factor Changes", Easy ),
+		Set Values( [5, 5, 5, 5, 10, 10, 10, 10] )
+	),
+	New Column( " FAN direction",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Property( "Coding", {-1, 1} ),
+		Set Property( "Design Role", DesignRole( Continuous ) ),
+		Set Property( "Factor Changes", Easy ),
+		Set Values( [-1, -1, 1, 1, -1, -1, 1, 1] )
+	),
+	New Column( " fan",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Property( "Coding", {-1, 1} ),
+		Set Property( "Design Role", DesignRole( Continuous ) ),
+		Set Property( "Factor Changes", Easy ),
+		Set Values( [1000, 1930, 1000, 1930, 1000, 1930, 1000, 1930] )
+	),
+	New Column( "nozzle temp",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Values(
+			[166.538, 139.628, 153.964, 124.287, 295.4, 255.12, 274.742, 255.239]
+		)
+	),
+	New Column( " thermistor temp",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Values(
+			[141.842, 115.69, 132.164, 102.523, 245.79, 210.26, 230.943, 181.032]
+		)
+	),
+	New Column( " heat break temp",
+		Numeric,
+		Continuous,
+		Format( "Best", 12 ),
+		Set Values(
+			[82.615, 56.64, 106.23, 69.904, 147.84, 92.53, 194.694, 120.673]
+		)
+	),
+	Set Label Columns( :Pattern )
+);
+Fit Model(
+	Y( :nozzle temp, :Name( " thermistor temp" ), :Name( " heat break temp" ) ),
+	Effects(
+		:heat block power,
+		:Name( " FAN direction" ),
+		:Name( " fan" ),
+		:heat block power * :Name( " FAN direction" ),
+		:heat block power * :Name( " fan" ),
+		:Name( " FAN direction" ) * :Name( " fan" ),
+		:Name( " FAN direction" ) * :Name( " fan" ) * :heat block power
+	),
+	Personality( Standard Least Squares ),
+	Emphasis( Effect Screening ),
+	Run(
+		Profiler(
+			1,
+			Confidence Intervals( 1 ),
+			Reorder X Variables(
+				:heat block power,
+				:Name( " FAN direction" ),
+				:Name( " fan" )
+			),
+			Term Value(
+				heat block power(
+					14.57,
+					Min( 3.8 ),
+					Max( 15.52575 ),
+					Lock( 0 ),
+					Show( 1 )
+				),
+				Name( " FAN direction" )(1, Lock( 0 ), Show( 1 )),
+				Name( " fan" )(2604, Min( 0 ), Max( 3720 ), Lock( 0 ), Show( 1 ))
+			)
+		),
+		:nozzle temp << {Analysis of Variance( 0 ), Lack of Fit( 0 ),
+		Normal Plot( 1 ), Pareto Plot( 1 ), Sorted Estimates( 1 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Effect Leverage( 0 ),
+		Interaction Plots( 1 )},
+		:Name( " thermistor temp" ) << {Analysis of Variance( 0 ), Lack of Fit( 0 ),
+		Normal Plot( 1 ), Pareto Plot( 1 ), Sorted Estimates( 1 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Effect Leverage( 0 ),
+		Interaction Plots( 1 )},
+		:Name( " heat break temp" ) << {Analysis of Variance( 0 ), Lack of Fit( 0 ),
+		Normal Plot( 1 ), Pareto Plot( 1 ), Sorted Estimates( 1 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Effect Leverage( 0 ),
+		Interaction Plots( 1 )}
+	),
+	SendToReport(
+		Dispatch(
+			{"Response nozzle temp", "Actual by Predicted Plot"},
+			"2",
+			ScaleBox,
+			{Min( 12.8205128205128 )}
+		),
+		Dispatch(
+			{"Response  thermistor temp", "Actual by Predicted Plot"},
+			"2",
+			ScaleBox,
+			{Min( 7.69230769230769 ), Add Ref Line( 200, Solid, "Black", "", 2 )}
+		),
+		Dispatch(
+			{"Response  heat break temp", "Actual by Predicted Plot"},
+			"2",
+			ScaleBox,
+			{Min( -69.2307692307692 ), Max( 200 ), Inc( 50 ), Minor Ticks( 0 ),
+			Add Ref Line( 80, Solid, "Black", "", 2 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"10002",
+			ScaleBox,
+			{Min( -69.2307692307692 ), Max( 200 ), Inc( 50 ), Minor Ticks( 0 ),
+			Add Ref Line( 80, Solid, "Black", "", 2 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"10001",
+			ScaleBox,
+			{Min( 7.69230769230769 ), Add Ref Line( 200, Solid, "Black", "", 2 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"10000",
+			ScaleBox,
+			{Min( 12.8205128205128 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"3",
+			ScaleBox,
+			{Min( 0 ), Max( 3720 ), Inc( 500 ), Minor Ticks( 1 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"1",
+			ScaleBox,
+			{Min( 3.8 ), Max( 15.52575 ), Inc( 2 ), Minor Ticks( 0 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox,
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 2 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 3 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 5 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 6 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 7 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 9 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 10 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			"Profiler",
+			FrameBox( 11 ),
+			{Frame Size( 110, 114 )}
+		),
+		Dispatch(
+			{"Prediction Profiler"},
+			" fan CFM",
+			TextEditBox,
+			{Set Text( " fan " )}
+		)
+	)
+);
