@@ -1,0 +1,79 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2017 SP1.0. Build: 3675
+                Computer name:   ELIZABETH-DESKT
+                User name:   Elizabeth
+                Processors:   Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+                Memory:   16347 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.17134)
+                CAD version:   SOLIDWORKS 2017 SP1.0
+                CPU speed:   3401 (1000) MHz
+
+    General Info
+                Model:   Bort Hot End.SLDPRT
+                Project name:   Project(1)
+                Project path:   C:\Users\Elizabeth\Documents\GitHub\Pulley-Z-axis\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (not exclude internal spaces)
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -0.018 m
+                X max:   0.024 m
+                Y min:   -0.059 m
+                Y max:   -0.034 m
+                Z min:   -0.034 m
+                Z max:   0.019 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   6
+                Number of cells in Y:   4
+                Number of cells in Z:   6
+
+        Number Of Cells
+                Cells:   56440
+                Fluid cells:   56440
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   4
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Iterations:   200
+                CPU time:   73 s
+
+        Log
+                Mesh generation started:   23:02:37 , May 11
+                Mesh generation normally finished:   23:02:37 , May 11
+                Preparing data for calculation:   23:02:39 , May 11
+                Calculation started	0:   23:02:39 , May 11
+                Refinement	50:   23:02:42 , May 11
+                Refinement	100:   23:02:48 , May 11
+                Refinement	150:   23:03:02 , May 11
+                Refinement	200:   23:03:51 , May 11
+                Calculation finished	235:   23:04:25 , May 11
