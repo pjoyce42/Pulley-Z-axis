@@ -1,0 +1,59 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2017 SP1.0. Build: 3675
+                Computer name:   ELIZABETH-DESKT
+                User name:   Elizabeth
+                Processors:   Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+                Memory:   16347 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.17134)
+                CAD version:   SOLIDWORKS 2017 SP1.0
+                CPU speed:   3401 MHz
+
+    General Info
+                Model:   Bort Hot End Assy.SLDASM
+                Project name:   Project(1)
+                Project path:   C:\Users\Elizabeth\Documents\GitHub\Pulley-Z-axis\2
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (exclude internal spaces)
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   On
+                Heat conduction in solids only:   Off
+                Radiation:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+
+    Computational Domain
+
+        Size
+                X min:   -0.254 m
+                X max:   0.053 m
+                Y min:   -0.248 m
+                Y max:   0.125 m
+                Z min:   -0.157 m
+                Z max:   0.149 m
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Iterations:   276
+                CPU time:   954 s
+
+        Log
+                Mesh generation started:   12:26:57 , May 19
+                Mesh generation normally finished:   12:27:16 , May 19
