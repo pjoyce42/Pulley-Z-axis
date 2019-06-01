@@ -8,7 +8,7 @@ run_convert:0
 isOK:1
 ForceNewCalc:1
 run_capture_prestate:1
-StartFldName:
+StartFldName:C:\Users\Elizabeth\Documents\GitHub\Pulley-Z-axis\2\2.fld
 TransTimeMoments:
 TransFldNames:
 CurSelTranFld:0
@@ -16,13 +16,13 @@ Trans:0
 UsePrevRes:0
 ForcetoRunCPT:1
 ComputerName:
-port:52855
+port:60298
 ProcessResults:1
 LoadLastResult:1
 ProcessorsToUse:0
 LoadBaseFLDFile:0
 BaseFLDFile:
-id:{83FA86C6-6BA7-4422-B13B-4EA117127137}
+id:{613D94D6-77A5-4144-A419-23940F7FA063}
 calculation_state:15
 ForceContinue:0
-SolverProcessId:19424
+SolverProcessId:10704

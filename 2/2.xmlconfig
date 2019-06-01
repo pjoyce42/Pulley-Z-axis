@@ -952,8 +952,8 @@
 <MaxThinChannelRefinementLevel value="2"/>
 <MaximumChannelsThickness value="0"/>
 <MinimumChannelsThickness value="0"/>
-<Nx value="24"/>
-<Ny value="31"/>
+<Nx value="27"/>
+<Ny value="32"/>
 <Nz value="28"/>
 <PartialCellsRefinementLevel value="0"/>
 <RefineAllCells value="0"/>
@@ -967,21 +967,21 @@
 <DistanceRefinementLevels size="2"> 0 0 </DistanceRefinementLevels>
 <ControlPoints index="0">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> -1 5 -1 -1 1 </NumOfCells>
-<Points size="5"> -0.25438228089003206 -0.024874999999999994 0.0057500000000000051 0.036375000000000005 0.052647385259373181 </Points>
-<Ratio size="5"> 8.3209999999999997 1 1 0.24746991605412719 1 </Ratio>
+<NumOfCells size="5"> -1 -1 26 -1 1 </NumOfCells>
+<Points size="5"> -0.25438228089003206 -0.024994653583196403 -0.0002326791598203648 0.024529295263555673 0.052647385259373181 </Points>
+<Ratio size="5"> 8.673 1 1 0.23136991884076114 1 </Ratio>
 </ControlPoints>
 <ControlPoints index="1">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> -1 5 -1 -1 1 </NumOfCells>
-<Points size="5"> -0.24848228089003208 -0.018646672997160722 0.028066350141964118 0.074779373281088954 0.12546157560993715 </Points>
-<Ratio size="5"> 8.0869999999999997 1 1 0.21373807969159636 1 </Ratio>
+<NumOfCells size="5"> -1 31 -1 -1 1 </NumOfCells>
+<Points size="5"> -0.24848228089003208 -0.018658698187063644 0.027465090646817857 0.073588879480699351 0.12546157560993715 </Points>
+<Ratio size="5"> 8.2829999999999995 1 1 0.21072734234046728 1 </Ratio>
 </ControlPoints>
 <ControlPoints index="2">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> -1 -1 5 -1 1 </NumOfCells>
+<NumOfCells size="5"> -1 -1 27 -1 1 </NumOfCells>
 <Points size="5"> -0.15742512207263354 -0.034329999999999999 -0.0014999999999999944 0.031330000000000011 0.14888412266822024 </Points>
-<Ratio size="5"> 6.1600000000000001 1 1 0.1652941282304789 1 </Ratio>
+<Ratio size="5"> 6.2619999999999996 1 1 0.16268130327329272 1 </Ratio>
 </ControlPoints>
 </BaseMeshSettings>
 <ConvergenceOptions index="0">
@@ -1009,7 +1009,7 @@
 <MaxIter value="100"/>
 <MaxPhysTime value="1"/>
 <MinRefinementNum value="0"/>
-<RRL value="2"/>
+<RRL value="3"/>
 <Rad_Ray_Tracing_Backward value="1"/>
 <Rad_n_DO_OrdinatesLevel value="3"/>
 <RadiationFreezingPeriodicity value="2"/>
@@ -1063,7 +1063,7 @@
 <View_Fact_Res_Lev value="3"/>
 <iFreezePermanentStart value="100"/>
 <iFreezeStart value="100"/>
-<LocalSAR_LocalMeshSettLevels size="1"> 0 </LocalSAR_LocalMeshSettLevels>
+<LocalSAR_LocalMeshSettLevels size="1"> -1 </LocalSAR_LocalMeshSettLevels>
 <LocalSAR_LocalMeshSettUuids size="1"> 05c40b40-f58f-4d8a-a581-58f23c41827e </LocalSAR_LocalMeshSettUuids>
 <LocalSAR_UseLocalMeshSettLevels size="1"> 0 </LocalSAR_UseLocalMeshSettLevels>
 <RefinementGoalConvergenceGuids size="0"> </RefinementGoalConvergenceGuids>
@@ -1883,8 +1883,8 @@
 <RotateAxis value="0"/>
 <WallVelocityType value="0"/>
 <BodiesIDs size="0"> </BodiesIDs>
-<Excluded_Faces_Keys size="1"> 493 </Excluded_Faces_Keys>
-<Faces_Keys size="1"> 389 </Faces_Keys>
+<Excluded_Faces_Keys size="1"> 804 </Excluded_Faces_Keys>
+<Faces_Keys size="1"> 692 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 0 1 0 -1 0 0 0 0 1 -0.00062628171457991544 -0.015882006489333331 0.027050637887416063 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">
 <ExcelParameter index="0">
@@ -2631,8 +2631,8 @@
 <RotateAxis value="0"/>
 <WallVelocityType value="0"/>
 <BodiesIDs size="0"> </BodiesIDs>
-<Excluded_Faces_Keys size="1"> 389 </Excluded_Faces_Keys>
-<Faces_Keys size="1"> 493 </Faces_Keys>
+<Excluded_Faces_Keys size="1"> 692 </Excluded_Faces_Keys>
+<Faces_Keys size="1"> 804 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> -1 0 0 -0 1 0 -0 0 -1 0.024337872672183618 -0.019999734848097566 6.726079496602226e-011 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">
 <ExcelParameter index="0">
@@ -4384,12 +4384,12 @@
 <Geometry index="0">
 <GeomType value="0"/>
 <GeomUUID value="00000000-0000-0000-0000-000000000000"/>
-<BodiesIDs size="1"> 36e9873d-44fd-4bf4-9a2b-82d451038507 </BodiesIDs>
+<BodiesIDs size="2"> d5df35c0-a9ac-4174-bbb9-a746c55c5c4a 710bf5fd-0e34-4f0c-8ddb-db8c622202c5 </BodiesIDs>
 </Geometry>
 <Geometry index="1">
 <GeomType value="1"/>
 <GeomUUID value="dd052fb8-f4ba-414e-9721-1ae179e64a9b"/>
-<BodiesIDs size="13"> 0bdc2012-9935-411c-ac46-36e3a1f8952a 1f33a42b-0c37-4bf3-a687-daf4c113596d 8bde7542-274d-4b81-a56d-d43bfee08a58 b92fa242-8b70-4c42-b014-3aaaccdd38fb bee4ba62-780c-411d-b130-48fcc7164ebf 6b7a688b-c363-4157-a84a-f480a4a34c96 3f00f891-fb87-40cc-b165-dd15d3a3a4ae 8afe5fa2-a416-44d7-afbc-90085e23ccf4 e6686ea5-5471-41ae-82f1-af93a545ec14 9f7b94c5-ad4c-4ac0-9785-7e78e082f562 441319d9-ed2f-438a-b754-5b3560e775dc 12432fe7-af59-402f-93da-d163b29670d0 47ae33e8-224b-43e2-872a-de215b14a27a </BodiesIDs>
+<BodiesIDs size="4"> 1f33a42b-0c37-4bf3-a687-daf4c113596d 3f00f891-fb87-40cc-b165-dd15d3a3a4ae 8afe5fa2-a416-44d7-afbc-90085e23ccf4 9f7b94c5-ad4c-4ac0-9785-7e78e082f562 </BodiesIDs>
 </Geometry>
 <Geometry index="2">
 <GeomType value="1"/>
@@ -4409,7 +4409,7 @@
 <Geometry index="5">
 <GeomType value="1"/>
 <GeomUUID value="275f4c32-8d8f-446a-bcde-7014623cbe71"/>
-<BodiesIDs size="3"> 9639c163-8604-4071-9126-023c25b282e8 34023bcf-c070-4805-b412-cbd424d25dae 86e8dad5-a9f1-4037-b4c2-54475d380773 </BodiesIDs>
+<BodiesIDs size="3"> b6167f0d-fe89-4dbb-b2c2-42759635e90c 34023bcf-c070-4805-b412-cbd424d25dae 86e8dad5-a9f1-4037-b4c2-54475d380773 </BodiesIDs>
 </Geometry>
 <Geometry index="6">
 <GeomType value="2"/>
@@ -5100,7 +5100,7 @@
 <Name value="Plexiglass Solid Material 1"/>
 <RotateAxis value="0"/>
 <SolidSubUUID value="275f4c32-8d8f-446a-bcde-7014623cbe71"/>
-<BodiesIDs size="3"> 9639c163-8604-4071-9126-023c25b282e8 86e8dad5-a9f1-4037-b4c2-54475d380773 34023bcf-c070-4805-b412-cbd424d25dae </BodiesIDs>
+<BodiesIDs size="3"> b6167f0d-fe89-4dbb-b2c2-42759635e90c 86e8dad5-a9f1-4037-b4c2-54475d380773 34023bcf-c070-4805-b412-cbd424d25dae </BodiesIDs>
 <Excluded_Faces_Keys size="0"> </Excluded_Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">

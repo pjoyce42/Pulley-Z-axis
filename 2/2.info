@@ -46,14 +46,34 @@
                 Z min:   -0.157 m
                 Z max:   0.149 m
 
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   27
+                Number of cells in Y:   32
+                Number of cells in Z:   28
+
+        Number Of Cells
+                Cells:   193663
+                Fluid cells:   92282
+                Solid cells:   101381
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   4
+
     Goals
                 
                 Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
 
     General Info
-                Iterations:   276
-                CPU time:   954 s
+                Iterations:   135
+                CPU time:   322 s
 
         Log
-                Mesh generation started:   12:26:57 , May 19
-                Mesh generation normally finished:   12:27:16 , May 19
+                Mesh generation started:   19:53:05 , May 31
+                Mesh generation normally finished:   19:53:26 , May 31
+                Preparing data for calculation:   19:53:27 , May 31
+                Calculation started	0:   19:53:31 , May 31
+                Refinement	135:   19:58:51 , May 31
+                Calculation finished	170:   20:02:39 , May 31
+                Warnings:   Solid is melting	Material: Plexiglass ; Max temperature=452.104 K; Melting temperature=383.15 K, 		, 

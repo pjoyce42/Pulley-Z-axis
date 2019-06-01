@@ -1,0 +1,81 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2017 SP1.0. Build: 3675
+                Computer name:   ELIZABETH-DESKT
+                User name:   Elizabeth
+                Processors:   Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+                Memory:   16347 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.17134)
+                CAD version:   SOLIDWORKS 2017 SP1.0
+                CPU speed:   3401 MHz
+
+    General Info
+                Model:   Bort Hot End Assy.SLDASM
+                Project name:   Volcano
+                Project path:   C:\Users\Elizabeth\Documents\GitHub\Pulley-Z-axis\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (exclude internal spaces)
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   On
+                Heat conduction in solids only:   Off
+                Radiation:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+
+    Computational Domain
+
+        Size
+                X min:   -0.254 m
+                X max:   0.053 m
+                Y min:   -0.248 m
+                Y max:   0.125 m
+                Z min:   -0.157 m
+                Z max:   0.149 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   25
+                Number of cells in Y:   30
+                Number of cells in Z:   28
+
+        Number Of Cells
+                Cells:   3121857
+                Fluid cells:   2204956
+                Solid cells:   916901
+                Irregular cells:   2
+                Trimmed cells:   12
+                Maximum refinement level:   7
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Iterations:   224
+                CPU time:   2451 s
+
+        Log
+                Mesh generation started:   10:17:11 , Jun 01
+                Mesh generation normally finished:   10:17:29 , Jun 01
+                Preparing data for calculation:   10:17:30 , Jun 01
+                Calculation started	0:   10:17:33 , Jun 01
+                Refinement	100:   10:20:42 , Jun 01
+                Refinement	150:   10:24:31 , Jun 01
+                Refinement	200:   10:34:56 , Jun 01
+                Calculation finished	224:   10:59:44 , Jun 01
+                Warnings:   Solid is melting	Material: Plexiglass ; Max temperature=389.189 K; Melting temperature=383.15 K, 		, 
