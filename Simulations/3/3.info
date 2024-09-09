@@ -1,0 +1,75 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2018 SP5.0. Build: 4373
+                Computer name:   LT-PJOYCE1
+                User name:   PJoyce
+                Processors:   Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+                Memory:   32548 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19045)
+                CAD version:   SOLIDWORKS 2018 SP5.0
+                CPU speed:   2712 MHz
+
+    General Info
+                Model:   Fan Duct 7.SLDPRT
+                Project name:   Fan Duct 7
+                Project path:   C:\Users\pjoyce\Documents\GitHub\Pulley-Z-axis\Simulations\3
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (not exclude internal spaces)
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   0 micrometer
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -0.182 m
+                X max:   0.161 m
+                Y min:   -0.157 m
+                Y max:   0.177 m
+                Z min:   -0.166 m
+                Z max:   0.181 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   52
+                Number of cells in Y:   49
+                Number of cells in Z:   52
+
+        Number Of Cells
+                Cells:   159367
+                Fluid cells:   159367
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   2
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Run at:   LT-PJOYCE1
+                Number of cores:   12
+                Iterations:   109
+                CPU time:   280 s
+
+        Log
+                Mesh generation started	0:   16:47:33 , Aug 23
+                Mesh generation normally finished	0:   16:47:41 , Aug 23
+                Preparing data for calculation	0:   16:47:41 , Aug 23
+                Calculation started	0:   16:47:45 , Aug 23
+                Calculation has converged since the following criteria are satisfied:	109:   16:52:23 , Aug 23
+                    Goals are converged	109:   
+                Calculation finished	109:   16:52:28 , Aug 23

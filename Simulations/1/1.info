@@ -1,0 +1,82 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2018 SP5.0. Build: 4373
+                Computer name:   LT-PJOYCE1
+                User name:   PJoyce
+                Processors:   Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+                Memory:   32548 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19045)
+                CAD version:   SOLIDWORKS 2018 SP5.0
+                CPU speed:   2712 MHz
+
+    General Info
+                Model:   Bort Hot End Assy.SLDASM
+                Project name:   Project(1)
+                Project path:   C:\Users\pjoyce\Documents\GitHub\Pulley-Z-axis\Simulations\1
+                Units system:   NMM (mm-g-s)
+                Analysis type:   External (exclude internal spaces)
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   On
+                Heat conduction in solids only:   Off
+                Radiation:   Off
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 mm/s^2
+                Y component:   -9810 mm/s^2
+                Z component:   0 mm/s^2
+
+    Computational Domain
+
+        Size
+                X min:   -239 mm
+                X max:   259 mm
+                Y min:   -252 mm
+                Y max:   300 mm
+                Z min:   -251 mm
+                Z max:   253 mm
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   40
+                Number of cells in Y:   46
+                Number of cells in Z:   42
+
+        Number Of Cells
+                Cells:   202699
+                Fluid cells:   150370
+                Solid cells:   52329
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   3
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Run at:   LT-PJOYCE1
+                Number of cores:   12
+                Iterations:   191
+                CPU time:   374 s
+
+        Log
+                Mesh generation started	0:   17:04:08 , Aug 05
+                Mesh generation normally finished	0:   17:04:27 , Aug 05
+                Preparing data for calculation	0:   17:04:28 , Aug 05
+                Calculation started	0:   17:04:40 , Aug 05
+                Calculation has converged since the following criteria are satisfied:	191:   17:10:45 , Aug 05
+                    Goals are converged	191:   
+                Calculation finished	191:   17:10:51 , Aug 05
