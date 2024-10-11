@@ -1,0 +1,205 @@
+<Block caption="simple" number="7">
+<![CDATA[
+Windows 10 (or higher) (Version 10.0.19045)
+GenuineIntel, Stepping ID = 2, Model = 5, Family = 6, Extended model = 10, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 12, Processor type: 8664, Active processor mask: 4095, Page size: 4096 bites
+Package 0 [ Group 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ] ]
+NUMA Node 0: Available Memory = 17.50 Gb. ProcessorGroup 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ]
+std::thread::hardware_concurrency = 12
+No NUMA support
+OpenMP enabled (spec=200203). max_threads = 12, num_procs = 12.
+
+]]>
+</Block>
+<Block caption="Vwr::LoadFlowField" number="0">
+<![CDATA[
+EXTERNAL=0   LAMTURB=1   CHT=0
+IT=6   NT=2   NZ=1
+U_DIM_EXT_MAX=8   US_DIM=0
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=12):
+MESH (0):
+	Fluid Subdom Constructor: 1 subdom(s).
+	Solid Subdom Constructor: 2 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=0 fluid av=27155 cv=25865 fa=74895 fw=19010 V=5.530257e-05
+	GEOMSUBDOM (1): gi=1 solid av=17786 cv=17786 fa=49885 fw=18295 V=1.775633e-04
+	GEOMSUBDOM (2): gi=1 solid av=6825 cv=6825 fa=19477 fw=6101 V=1.718598e-05
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.1095178029359442 fw_s=0.0222710726335926 fw_nb=162234
+	GEOMSUBDOM (1):fa_s=0.1508332119653000 fw_s=0.0434720427605944 fw_nb=129694
+	GEOMSUBDOM (2):fa_s=0.0298511249869640 fw_s=0.0055846959174923 fw_nb=54708
+MESH (0) checking: OK.
+----------------------------------------------------------
+Read cpt took 0.22 sec.
+
+===ThermodynamicsHolder:===
+Subdom 0 Ideal gas thermodynamics
+	substance 0 type=fwGas, guid=2B966F4A9A9F11D4A50048A0E8000000, name=Air
+===ThermodynamicsHolder:===
+MESH::Bricks: Total=36940 Gas=12536 Solid=9813 Partial=14591 Irregular=0
+CD X0= -0.025551, X1= 0.025551, Y0= -0.0381278852317, Y1= 0.0900131169445, Z0= -0.033487211061, Z1= 0.00469877916421
+Created TMP file C:\Users\pjoyce\AppData\Local\Temp\gdb563.tmp
+Read cfld took 0.20 sec.
+Collecting Reference Parameters... OK
+Read fld took 0.12 sec.
+
+]]>
+<Block caption="simple" number="8">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+</Block>
+<![CDATA[
+FS triangles count 3094 
+internal_dev_jump: rand_base = 454994730, res_fid = 10734
+trajectory 0, dir = reverse, Time = -0.168152, Length = -0.154926, PointCount = 4324, TSR = 1
+trajectory 0, dir = fwrd, Time = 1.49671e-05, Length = 5.66956e-05, PointCount = 4327, TSR = 1
+internal_dev_jump: rand_base = -1018996381, res_fid = 12391
+trajectory 1, dir = reverse, Time = -0.0522058, Length = -0.0980289, PointCount = 223, TSR = 1
+trajectory 1, dir = fwrd, Time = 1.35167e-05, Length = 5.73095e-05, PointCount = 226, TSR = 1
+internal_dev_jump: rand_base = -1702754590, res_fid = 7377
+internal_dev_jump: rand_base = -1881581351, res_fid = 13890
+trajectory 2, dir = reverse, Time = -0.04397, Length = -0.103013, PointCount = 352, TSR = 1
+trajectory 2, dir = fwrd, Time = 2.73746e-05, Length = 7.90262e-05, PointCount = 356, TSR = 1
+internal_dev_jump: rand_base = 1119886120, res_fid = 11525
+internal_dev_jump: rand_base = -773176217, res_fid = 13311
+trajectory 3, dir = reverse, Time = -0.0661787, Length = -0.122963, PointCount = 295, TSR = 1
+trajectory 3, dir = fwrd, Time = 1.61498e-05, Length = 6.22712e-05, PointCount = 299, TSR = 1
+internal_dev_jump: rand_base = 2018551457, res_fid = 12090
+internal_dev_jump: rand_base = -1062957172, res_fid = 9594
+trajectory 4, dir = reverse, Time = -0.0767556, Length = -0.12196, PointCount = 291, TSR = 1
+trajectory 4, dir = fwrd, Time = 1.32897e-05, Length = 5.59265e-05, PointCount = 293, TSR = 1
+internal_dev_jump: rand_base = 1334793248, res_fid = 10857
+internal_dev_jump: rand_base = -1722091265, res_fid = 16338
+trajectory 5, dir = reverse, Time = -0.0704037, Length = -0.137253, PointCount = 794, TSR = 1
+trajectory 5, dir = fwrd, Time = 2.55852e-05, Length = 7.50846e-05, PointCount = 798, TSR = 1
+internal_dev_jump: rand_base = -137533338, res_fid = 16187
+internal_dev_jump: rand_base = -613686131, res_fid = 14568
+trajectory 6, dir = reverse, Time = -0.0462989, Length = -0.106664, PointCount = 693, TSR = 1
+trajectory 6, dir = fwrd, Time = 1.64932e-05, Length = 6.22755e-05, PointCount = 697, TSR = 1
+internal_dev_jump: rand_base = -1611524449, res_fid = 14843
+internal_dev_jump: rand_base = 105149298, res_fid = 12358
+trajectory 7, dir = reverse, Time = -0.0854091, Length = -0.11091, PointCount = 232, TSR = 1
+trajectory 7, dir = fwrd, Time = 1.41866e-05, Length = 5.7316e-05, PointCount = 235, TSR = 1
+internal_dev_jump: rand_base = 1999684638, res_fid = 11407
+internal_dev_jump: rand_base = -553984795, res_fid = 17994
+trajectory 8, dir = reverse, Time = -0.106262, Length = -0.111425, PointCount = 285, TSR = 1
+trajectory 8, dir = fwrd, Time = 2.91069e-05, Length = 8.07378e-05, PointCount = 290, TSR = 1
+internal_dev_jump: rand_base = 527358052, res_fid = 14764
+trajectory 9, dir = reverse, Time = -0.145625, Length = -0.152034, PointCount = 2961, TSR = 1
+trajectory 9, dir = fwrd, Time = 1.59175e-05, Length = 5.67148e-05, PointCount = 2964, TSR = 1
+internal_dev_jump: rand_base = -397942419, res_fid = 16664
+trajectory 10, dir = reverse, Time = -0.109692, Length = -0.127079, PointCount = 1007, TSR = 1
+trajectory 10, dir = fwrd, Time = 1.57529e-05, Length = 5.67088e-05, PointCount = 1010, TSR = 1
+internal_dev_jump: rand_base = 1759806901, res_fid = 14731
+trajectory 11, dir = reverse, Time = -0.0933429, Length = -0.111212, PointCount = 1254, TSR = 1
+trajectory 11, dir = fwrd, Time = 1.41052e-05, Length = 5.73173e-05, PointCount = 1257, TSR = 1
+internal_dev_jump: rand_base = 1074384167, res_fid = 9345
+trajectory 12, dir = reverse, Time = -0.0989603, Length = -0.117837, PointCount = 280, TSR = 1
+trajectory 12, dir = fwrd, Time = 2.9292e-05, Length = 8.05766e-05, PointCount = 285, TSR = 1
+internal_dev_jump: rand_base = -1062833809, res_fid = 9760
+trajectory 13, dir = reverse, Time = -0.0462513, Length = -0.0922804, PointCount = 317, TSR = 1
+trajectory 13, dir = fwrd, Time = 1.64757e-05, Length = 6.22758e-05, PointCount = 321, TSR = 1
+internal_dev_jump: rand_base = 1094915511, res_fid = 12388
+trajectory 14, dir = reverse, Time = -0.224282, Length = -0.224135, PointCount = 668, TSR = 1
+trajectory 14, dir = fwrd, Time = 1.32794e-05, Length = 5.59249e-05, PointCount = 670, TSR = 1
+internal_dev_jump: rand_base = 409492777, res_fid = 13248
+trajectory 15, dir = reverse, Time = -0.0423196, Length = -0.0942941, PointCount = 218, TSR = 1
+trajectory 15, dir = fwrd, Time = 2.52897e-05, Length = 7.42249e-05, PointCount = 221, TSR = 1
+internal_dev_jump: rand_base = -1727725199, res_fid = 7029
+internal_dev_jump: rand_base = 608963612, res_fid = 11958
+trajectory 16, dir = reverse, Time = -0.0458347, Length = -0.0942763, PointCount = 215, TSR = 1
+trajectory 16, dir = fwrd, Time = 1.61558e-05, Length = 6.22701e-05, PointCount = 219, TSR = 1
+internal_dev_jump: rand_base = -1942632327, res_fid = 9716
+trajectory 17, dir = reverse, Time = -0.146557, Length = -0.181704, PointCount = 602, TSR = 1
+trajectory 17, dir = fwrd, Time = 1.34953e-05, Length = 5.73097e-05, PointCount = 605, TSR = 1
+internal_dev_jump: rand_base = 1666912235, res_fid = 16339
+internal_dev_jump: rand_base = 509174862, res_fid = 13893
+trajectory 18, dir = reverse, Time = -0.0446396, Length = -0.105962, PointCount = 305, TSR = 1
+trajectory 18, dir = fwrd, Time = 2.6868e-05, Length = 7.78147e-05, PointCount = 310, TSR = 1
+internal_dev_jump: rand_base = -470305741, res_fid = 17971
+internal_dev_jump: rand_base = 449473526, res_fid = 12710
+trajectory 19, dir = reverse, Time = -0.120696, Length = -0.15255, PointCount = 4395, TSR = 1
+trajectory 19, dir = fwrd, Time = 1.51162e-05, Length = 5.73931e-05, PointCount = 4398, TSR = 1
+
+]]>
+<Block caption="simple" number="9">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+<Block caption="simple" number="10">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+<Block caption="simple" number="11">
+<![CDATA[
+Windows 10 (or higher) (Version 10.0.19045)
+GenuineIntel, Stepping ID = 2, Model = 5, Family = 6, Extended model = 10, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 12, Processor type: 8664, Active processor mask: 4095, Page size: 4096 bites
+Package 0 [ Group 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ] ]
+NUMA Node 0: Available Memory = 17.37 Gb. ProcessorGroup 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ]
+std::thread::hardware_concurrency = 12
+No NUMA support
+OpenMP enabled (spec=200203). max_threads = 12, num_procs = 12.
+
+]]>
+</Block>
+<Block caption="Vwr::LoadFlowField" number="1">
+<![CDATA[
+EXTERNAL=0   LAMTURB=1   CHT=0
+IT=6   NT=2   NZ=1
+U_DIM_EXT_MAX=8   US_DIM=0
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=12):
+MESH (0):
+	Fluid Subdom Constructor: 1 subdom(s).
+	Solid Subdom Constructor: 2 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=0 fluid av=27155 cv=25865 fa=74895 fw=19010 V=5.530257e-05
+	GEOMSUBDOM (1): gi=1 solid av=17786 cv=17786 fa=49885 fw=18295 V=1.775633e-04
+	GEOMSUBDOM (2): gi=1 solid av=6825 cv=6825 fa=19477 fw=6101 V=1.718598e-05
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.1095178029359442 fw_s=0.0222710726335926 fw_nb=162234
+	GEOMSUBDOM (1):fa_s=0.1508332119653000 fw_s=0.0434720427605944 fw_nb=129694
+	GEOMSUBDOM (2):fa_s=0.0298511249869640 fw_s=0.0055846959174923 fw_nb=54708
+MESH (0) checking: OK.
+----------------------------------------------------------
+Read cpt took 0.22 sec.
+
+===ThermodynamicsHolder:===
+Subdom 0 Ideal gas thermodynamics
+	substance 0 type=fwGas, guid=2B966F4A9A9F11D4A50048A0E8000000, name=Air
+===ThermodynamicsHolder:===
+MESH::Bricks: Total=36940 Gas=12536 Solid=9813 Partial=14591 Irregular=0
+CD X0= -0.025551, X1= 0.025551, Y0= -0.0381278852317, Y1= 0.0900131169445, Z0= -0.033487211061, Z1= 0.00469877916421
+Read cfld took 0.05 sec.
+Collecting Reference Parameters... OK
+Read fld took 0.12 sec.
+
+]]>
+<Block caption="simple" number="12">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+</Block>

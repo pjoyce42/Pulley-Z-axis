@@ -1,0 +1,78 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2018 SP5.0. Build: 4373
+                Computer name:   LT-PJOYCE1
+                User name:   PJoyce
+                Processors:   Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+                Memory:   32548 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19045)
+                CAD version:   SOLIDWORKS 2018 SP5.0
+                CPU speed:   2712 MHz
+
+    General Info
+                Model:   Fan shroud, Bortbot, vert.SLDPRT
+                Project name:   Project(1)
+                Project path:   C:\Users\pjoyce\Documents\GitHub\Pulley-Z-axis\Simulations\4
+                Units system:   CGS (cm-g-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   0 micrometer
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -2.6 cm
+                X max:   2.6 cm
+                Y min:   -3.8 cm
+                Y max:   9.0 cm
+                Z min:   -3.3 cm
+                Z max:   0.5 cm
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   10
+                Number of cells in Y:   26
+                Number of cells in Z:   8
+
+        Number Of Cells
+                Cells:   27155
+                Fluid cells:   27155
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   2
+
+    Goals
+                
+                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+
+    General Info
+                Run at:   LT-PJOYCE1
+                Number of cores:   12
+                Iterations:   84
+                CPU time:   30 s
+
+        Log
+                Mesh generation started	0:   16:04:09 , Sep 11
+                Mesh generation normally finished	0:   16:04:12 , Sep 11
+                Preparing data for calculation	0:   16:04:12 , Sep 11
+                Calculation started	0:   16:04:13 , Sep 11
+                Calculation has converged since the following criteria are satisfied:	84:   16:04:43 , Sep 11
+                    Goals are converged	84:   
+                Calculation finished	84:   16:04:44 , Sep 11
+                Preparing data for calculation	0:   16:09:59 , Sep 11
+                Calculation finished	84:   16:09:59 , Sep 11
+                Warnings:   A vortex crosses the pressure opening	Boundary Condition : Environment Pressure 1 ; Inlet flow/outlet flow=3.96501, 		Boundary Condition : Environment Pressure 1 ; Inlet flow/outlet flow=0.127859, 		, 
