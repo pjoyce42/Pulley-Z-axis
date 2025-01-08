@@ -203,3 +203,104 @@ Read fld took 0.12 sec.
 ]]>
 </Block>
 </Block>
+<Block caption="simple" number="3">
+<![CDATA[
+Windows 10 (or higher) (Version 10.0.19045)
+GenuineIntel, Stepping ID = 2, Model = 5, Family = 6, Extended model = 10, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 12, Processor type: 8664, Active processor mask: 4095, Page size: 4096 bites
+Package 0 [ Group 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ] ]
+NUMA Node 0: Available Memory = 14.70 Gb. ProcessorGroup 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ]
+std::thread::hardware_concurrency = 12
+No NUMA support
+OpenMP enabled (spec=200203). max_threads = 12, num_procs = 12.
+
+]]>
+</Block>
+<Block caption="simple" number="4">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+<Block caption="simple" number="5">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+<Block caption="simple" number="6">
+<![CDATA[
+Windows 10 (or higher) (Version 10.0.19045)
+GenuineIntel, Stepping ID = 2, Model = 5, Family = 6, Extended model = 10, MMX SSE SSE2 Hyper-Threading Technology SSE3
+CPU Brand String: Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz
+Cache Line Size = 64, L2 Associativity = 6, Cache Size = 256K
+Number of cores: 12, Processor type: 8664, Active processor mask: 4095, Page size: 4096 bites
+Package 0 [ Group 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ] ]
+NUMA Node 0: Available Memory = 14.87 Gb. ProcessorGroup 0 [ 0 1 2 3 4 5 6 7 8 9 10 11 ]
+std::thread::hardware_concurrency = 12
+No NUMA support
+OpenMP enabled (spec=200203). max_threads = 12, num_procs = 12.
+
+]]>
+</Block>
+<Block caption="Vwr::LoadFlowField" number="0">
+<![CDATA[
+EXTERNAL=0   LAMTURB=1   CHT=0
+IT=6   NT=2   NZ=1
+U_DIM_EXT_MAX=8   US_DIM=0
+----------------------------------------------------------
+BCF --> BCF.GEOMSUBDOM (bridge arrays) (cpu_num=12):
+MESH (0):
+	Fluid Subdom Constructor: 1 subdom(s).
+	Solid Subdom Constructor: 2 subdom(s).
+	Net Asm Subdom Constructor: 0 subdom(s).
+	GEOMSUBDOM (0): gi=0 fluid av=27155 cv=25865 fa=74895 fw=19010 V=5.530257e-05
+	GEOMSUBDOM (1): gi=1 solid av=17786 cv=17786 fa=49885 fw=18295 V=1.775633e-04
+	GEOMSUBDOM (2): gi=1 solid av=6825 cv=6825 fa=19477 fw=6101 V=1.718598e-05
+	Setting nb of w-faces...OK.
+
+MESH (0) checking:
+	GEOMSUBDOM (0):fa_s=0.1095178029359442 fw_s=0.0222710726335926 fw_nb=162234
+	GEOMSUBDOM (1):fa_s=0.1508332119653000 fw_s=0.0434720427605944 fw_nb=129694
+	GEOMSUBDOM (2):fa_s=0.0298511249869640 fw_s=0.0055846959174923 fw_nb=54708
+MESH (0) checking: OK.
+----------------------------------------------------------
+Read cpt took 0.28 sec.
+
+===ThermodynamicsHolder:===
+Subdom 0 Ideal gas thermodynamics
+	substance 0 type=fwGas, guid=2B966F4A9A9F11D4A50048A0E8000000, name=Air
+===ThermodynamicsHolder:===
+MESH::Bricks: Total=36940 Gas=12536 Solid=9813 Partial=14591 Irregular=0
+CD X0= -0.025551, X1= 0.025551, Y0= -0.0381278852317, Y1= 0.0900131169445, Z0= -0.033487211061, Z1= 0.00469877916421
+Read cfld took 0.07 sec.
+Collecting Reference Parameters... OK
+Read fld took 0.14 sec.
+
+]]>
+<Block caption="simple" number="7">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+</Block>
+<Block caption="simple" number="8">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
+<Block caption="simple" number="9">
+<![CDATA[
+90 parameter(s) in list of scalar parameters
+4 parameter(s) in list of vector parameters
+
+]]>
+</Block>
